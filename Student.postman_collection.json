@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "4fc3cd91-bf52-4f5b-bf77-906ada08acdd",
+		"name": "Student",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30807582"
+	},
+	"item": [
+		{
+			"name": "getAllStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/students",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/students/:regno",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						":regno"
+					],
+					"variable": [
+						{
+							"key": "regno",
+							"value": "RA2111033010020"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTopper",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/getTopper",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"getTopper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFailedList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/getFailedList",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"getFailedList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/addStudent/:reg_no/:name/:age/:marks/:mail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"addStudent",
+						":reg_no",
+						":name",
+						":age",
+						":marks",
+						":mail"
+					],
+					"variable": [
+						{
+							"key": "reg_no",
+							"value": "RA2111033010024"
+						},
+						{
+							"key": "name",
+							"value": "NuN"
+						},
+						{
+							"key": "age",
+							"value": "21"
+						},
+						{
+							"key": "marks",
+							"value": "32"
+						},
+						{
+							"key": "mail",
+							"value": "nun@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStudentMarksById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/updateMarks/:regno/:marks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"updateMarks",
+						":regno",
+						":marks"
+					],
+					"variable": [
+						{
+							"key": "regno",
+							"value": "RA2111033010020"
+						},
+						{
+							"key": "marks",
+							"value": "93"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteStudentById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/deleteStudent/:regno",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"deleteStudent",
+						":regno"
+					],
+					"variable": [
+						{
+							"key": "regno",
+							"value": "RA2111033010004"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
